@@ -55,9 +55,7 @@ Zth = Zeq1+Zeq2
 IN = VTH/Zth;
 [MIn,AIn] = rect2pha(IN)
 
-Vth = (-12)*(1-1j*2)/(1+1j)
-[Mag,Ang] = rect2pha(Vth)
-
+%% Funciones auxiliares
 function z = pha2rect(Mag,Ang)
 
 z = Mag*exp(1j*Ang*pi/180);
